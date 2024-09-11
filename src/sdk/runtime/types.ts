@@ -1,6 +1,8 @@
 import type { AttachmentOptions, Label, Link, ParameterMode, ParameterOptions, Status } from "../../model.js";
 
 export interface TestRuntime {
+  expectedlyFailedTests
+
   labels: (...labels: Label[]) => PromiseLike<void>;
 
   links: (...links: Link[]) => PromiseLike<void>;

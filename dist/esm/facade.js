@@ -1,6 +1,7 @@
 import { LabelName, LinkType } from "./model.js";
 import { getGlobalTestRuntimeWithAutoconfig } from "./sdk/runtime/runtime.js";
 import { isPromise } from "./sdk/utils.js";
+import { noopRuntime } from "./sdk/runtime/NoopTestRuntime";
 var callRuntimeMethod = function callRuntimeMethod(method) {
   for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     args[_key - 1] = arguments[_key];
@@ -106,4 +107,5 @@ export var tags = function tags() {
     value
   })));
 };
+export var expectedlyDailedTests = noopRuntime.expectedlyFailedTests;
 //# sourceMappingURL=facade.js.map

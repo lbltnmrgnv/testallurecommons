@@ -5,6 +5,7 @@ import { LabelName, LinkType } from "./model.js";
 import { getGlobalTestRuntimeWithAutoconfig } from "./sdk/runtime/runtime.js";
 import type { TestRuntime } from "./sdk/runtime/types.js";
 import { isPromise } from "./sdk/utils.js";
+import {noopRuntime} from "./sdk/runtime/NoopTestRuntime";
 
 const callRuntimeMethod = <
   T extends keyof TestRuntime,
@@ -136,3 +137,6 @@ export const tag = (name: string) => label(LabelName.TAG, name);
 export const tags = (...tagsList: string[]) => {
   return callRuntimeMethod("labels", ...tagsList.map((value) => ({ name: LabelName.TAG, value })));
 };
+
+
+export const expectedlyDailedTests = noopRuntime.expectedlyFailedTests
