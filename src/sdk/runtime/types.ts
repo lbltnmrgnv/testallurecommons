@@ -30,4 +30,6 @@ export interface TestRuntime {
   stepDisplayName: (name: string) => PromiseLike<void>;
 
   stepParameter: (name: string, value: string, mode?: ParameterMode) => PromiseLike<void>;
+
+  addFailedTests: (tests: string[]) => PromiseLike<void>;
 }

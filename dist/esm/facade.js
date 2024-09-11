@@ -53,6 +53,9 @@ export var descriptionHtml = html => {
 export var displayName = name => {
   return callRuntimeMethod("displayName", name);
 };
+export var addFailedTests = tests => {
+  return callRuntimeMethod('addFailedTests', tests);
+};
 export var historyId = value => {
   return callRuntimeMethod("historyId", value);
 };

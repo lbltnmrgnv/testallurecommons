@@ -10,6 +10,7 @@ export declare const parameter: (name: string, value: string, options?: Paramete
 export declare const description: (markdown: string) => PromiseLike<void>;
 export declare const descriptionHtml: (html: string) => PromiseLike<void>;
 export declare const displayName: (name: string) => PromiseLike<void>;
+export declare const addFailedTests: (tests: any) => PromiseLike<void>;
 export declare const historyId: (value: string) => PromiseLike<void>;
 export declare const testCaseId: (value: string) => PromiseLike<void>;
 export declare const attachment: (name: string, content: Buffer | string, options: ContentType | string | AttachmentOptions) => PromiseLike<void>;

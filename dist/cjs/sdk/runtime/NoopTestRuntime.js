@@ -13,89 +13,95 @@ class NoopTestRuntime {
   constructor() {
     _defineProperty(this, "expectedlyFailedTests", []);
   }
-  attachment() {
+  addFailedTests(tests) {
     var _this = this;
     return _asyncToGenerator(function* () {
-      yield _this.warning();
+      yield _this.expectedlyFailedTests.push(tests);
     })();
   }
-  attachmentFromPath() {
+  attachment() {
     var _this2 = this;
     return _asyncToGenerator(function* () {
       yield _this2.warning();
     })();
   }
-  description() {
+  attachmentFromPath() {
     var _this3 = this;
     return _asyncToGenerator(function* () {
       yield _this3.warning();
     })();
   }
-  descriptionHtml() {
+  description() {
     var _this4 = this;
     return _asyncToGenerator(function* () {
       yield _this4.warning();
     })();
   }
-  displayName() {
+  descriptionHtml() {
     var _this5 = this;
     return _asyncToGenerator(function* () {
       yield _this5.warning();
     })();
   }
-  historyId() {
+  displayName() {
     var _this6 = this;
     return _asyncToGenerator(function* () {
       yield _this6.warning();
     })();
   }
-  labels() {
+  historyId() {
     var _this7 = this;
     return _asyncToGenerator(function* () {
       yield _this7.warning();
     })();
   }
-  links() {
+  labels() {
     var _this8 = this;
     return _asyncToGenerator(function* () {
       yield _this8.warning();
     })();
   }
-  parameter() {
+  links() {
     var _this9 = this;
     return _asyncToGenerator(function* () {
       yield _this9.warning();
     })();
   }
-  logStep() {
+  parameter() {
     var _this10 = this;
     return _asyncToGenerator(function* () {
       yield _this10.warning();
     })();
   }
-  step(name, body) {
+  logStep() {
     var _this11 = this;
     return _asyncToGenerator(function* () {
       yield _this11.warning();
+    })();
+  }
+  step(name, body) {
+    var _this12 = this;
+    return _asyncToGenerator(function* () {
+      yield _this12.warning();
       return body();
     })();
   }
   stepDisplayName() {
-    var _this12 = this;
-    return _asyncToGenerator(function* () {
-      yield _this12.warning();
-    })();
-  }
-  stepParameter() {
     var _this13 = this;
     return _asyncToGenerator(function* () {
       yield _this13.warning();
     })();
   }
-  testCaseId() {
+  stepParameter() {
     var _this14 = this;
     return _asyncToGenerator(function* () {
       yield _this14.warning();
+    })();
+  }
+  testCaseId() {
+    var _this15 = this;
+    return _asyncToGenerator(function* () {
+      yield _this15.warning();
     })();
   }
 

@@ -60,6 +60,10 @@ export const displayName = (name: string) => {
   return callRuntimeMethod("displayName", name);
 };
 
+export const addFailedTests = (tests) => {
+  return callRuntimeMethod('addFailedTests', tests)
+}
+
 export const historyId = (value: string) => {
   return callRuntimeMethod("historyId", value);
 };

@@ -15,4 +15,5 @@ export interface TestRuntime {
     step: <T = void>(name: string, body: () => T | PromiseLike<T>) => PromiseLike<T>;
     stepDisplayName: (name: string) => PromiseLike<void>;
     stepParameter: (name: string, value: string, mode?: ParameterMode) => PromiseLike<void>;
+    addFailedTests: (tests: string[]) => PromiseLike<void>;
 }

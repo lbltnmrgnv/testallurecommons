@@ -14,6 +14,10 @@ import type { TestRuntime } from "./types.js";
 
 export abstract class MessageTestRuntime implements TestRuntime {
   expectedlyFailedTests
+
+  async addFailedTests(tests: string[]) {
+
+  }
   async label(name: LabelName | string, value: string) {
     await this.sendMessage({
       type: "metadata",

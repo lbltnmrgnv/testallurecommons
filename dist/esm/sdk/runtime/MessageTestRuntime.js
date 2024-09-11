@@ -11,6 +11,9 @@ export class MessageTestRuntime {
   constructor() {
     _defineProperty(this, "expectedlyFailedTests", void 0);
   }
+  addFailedTests(tests) {
+    return _asyncToGenerator(function* () {})();
+  }
   label(name, value) {
     var _this = this;
     return _asyncToGenerator(function* () {
