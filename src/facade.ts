@@ -143,4 +143,4 @@ export const tags = (...tagsList: string[]) => {
 };
 
 
-export const expectedlyDailedTests = noopRuntime.expectedlyFailedTests
+export const expectedlyFailedTests = noopRuntime.expectedlyFailedTests
