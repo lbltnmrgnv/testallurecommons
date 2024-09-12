@@ -110,5 +110,5 @@ export var tags = function tags() {
     value
   })));
 };
-export var expectedlyDailedTests = noopRuntime.expectedlyFailedTests;
+export var expectedlyFailedTests = noopRuntime.expectedlyFailedTests;
 //# sourceMappingURL=facade.js.map

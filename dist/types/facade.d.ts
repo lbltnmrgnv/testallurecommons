@@ -35,4 +35,4 @@ export declare const severity: (name: string) => PromiseLike<void>;
 export declare const layer: (name: string) => PromiseLike<void>;
 export declare const tag: (name: string) => PromiseLike<void>;
 export declare const tags: (...tagsList: string[]) => PromiseLike<void>;
-export declare const expectedlyDailedTests: any;
+export declare const expectedlyFailedTests: any;

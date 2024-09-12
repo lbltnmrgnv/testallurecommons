@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.tms = exports.testCaseId = exports.tags = exports.tag = exports.suite = exports.subSuite = exports.story = exports.step = exports.severity = exports.parentSuite = exports.parameter = exports.owner = exports.logStep = exports.links = exports.link = exports.layer = exports.labels = exports.label = exports.issue = exports.historyId = exports.feature = exports.expectedlyDailedTests = exports.epic = exports.displayName = exports.descriptionHtml = exports.description = exports.attachmentPath = exports.attachment = exports.allureId = exports.addFailedTests = void 0;
+exports.tms = exports.testCaseId = exports.tags = exports.tag = exports.suite = exports.subSuite = exports.story = exports.step = exports.severity = exports.parentSuite = exports.parameter = exports.owner = exports.logStep = exports.links = exports.link = exports.layer = exports.labels = exports.label = exports.issue = exports.historyId = exports.feature = exports.expectedlyFailedTests = exports.epic = exports.displayName = exports.descriptionHtml = exports.description = exports.attachmentPath = exports.attachment = exports.allureId = exports.addFailedTests = void 0;
 var _model = require("./model.js");
 var _runtime = require("./sdk/runtime/runtime.js");
 var _utils = require("./sdk/utils.js");
@@ -142,5 +142,5 @@ var tags = exports.tags = function tags() {
     value
   })));
 };
-var expectedlyDailedTests = exports.expectedlyDailedTests = _NoopTestRuntime.noopRuntime.expectedlyFailedTests;
+var expectedlyFailedTests = exports.expectedlyFailedTests = _NoopTestRuntime.noopRuntime.expectedlyFailedTests;
 //# sourceMappingURL=facade.js.map
