@@ -14,7 +14,7 @@ var Status = exports.Status = /*#__PURE__*/function (Status) {
   Status["EXPECTEDLY_FAILED"] = "expectedlyFailed";
   return Status;
 }({});
-var StatusByPriority = exports.StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED];
+var StatusByPriority = exports.StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED, Status.EXPECTEDLY_FAILED];
 
 /* eslint-disable no-shadow */
 var Stage = exports.Stage = /*#__PURE__*/function (Stage) {

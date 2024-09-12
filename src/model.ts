@@ -84,7 +84,7 @@ export enum Status {
   EXPECTEDLY_FAILED = "expectedlyFailed",
 }
 
-export const StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED];
+export const StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED, Status.EXPECTEDLY_FAILED];
 
 /* eslint-disable no-shadow */
 export enum Stage {

@@ -9,7 +9,7 @@ export var Status = /*#__PURE__*/function (Status) {
   Status["EXPECTEDLY_FAILED"] = "expectedlyFailed";
   return Status;
 }({});
-export var StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED];
+export var StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED, Status.EXPECTEDLY_FAILED];
 
 /* eslint-disable no-shadow */
 export var Stage = /*#__PURE__*/function (Stage) {
