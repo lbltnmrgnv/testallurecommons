@@ -1,7 +1,6 @@
 import type { AttachmentOptions, Label, Link, ParameterMode, ParameterOptions, Status } from "../../model.js";
 
 export interface TestRuntime {
-  expectedlyFailedTests
 
   labels: (...labels: Label[]) => PromiseLike<void>;
 
@@ -30,6 +29,4 @@ export interface TestRuntime {
   stepDisplayName: (name: string) => PromiseLike<void>;
 
   stepParameter: (name: string, value: string, mode?: ParameterMode) => PromiseLike<void>;
-
-  addFailedTests: (tests: string[]) => PromiseLike<void>;
 }

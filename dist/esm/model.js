@@ -6,6 +6,7 @@ export var Status = /*#__PURE__*/function (Status) {
   Status["BROKEN"] = "broken";
   Status["PASSED"] = "passed";
   Status["SKIPPED"] = "skipped";
+  Status["EXPECTEDLY_FAILED"] = "expectedlyFailed";
   return Status;
 }({});
 export var StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED];

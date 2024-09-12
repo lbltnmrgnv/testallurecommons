@@ -66,7 +66,8 @@ export declare enum Status {
     FAILED = "failed",
     BROKEN = "broken",
     PASSED = "passed",
-    SKIPPED = "skipped"
+    SKIPPED = "skipped",
+    EXPECTEDLY_FAILED = "expectedlyFailed"
 }
 export declare const StatusByPriority: Status[];
 export declare enum Stage {

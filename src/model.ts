@@ -81,6 +81,7 @@ export enum Status {
   BROKEN = "broken",
   PASSED = "passed",
   SKIPPED = "skipped",
+  EXPECTEDLY_FAILED = "expectedlyFailed",
 }
 
 export const StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED];

@@ -1,7 +1,5 @@
 import type { TestRuntime } from "./types.js";
 export declare class NoopTestRuntime implements TestRuntime {
-    expectedlyFailedTests: string[];
-    addFailedTests(tests: any): Promise<void>;
     attachment(): Promise<void>;
     attachmentFromPath(): Promise<void>;
     description(): Promise<void>;

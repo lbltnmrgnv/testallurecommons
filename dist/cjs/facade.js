@@ -3,11 +3,10 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.tms = exports.testCaseId = exports.tags = exports.tag = exports.suite = exports.subSuite = exports.story = exports.step = exports.severity = exports.parentSuite = exports.parameter = exports.owner = exports.logStep = exports.links = exports.link = exports.layer = exports.labels = exports.label = exports.issue = exports.historyId = exports.feature = exports.expectedlyFailedTests = exports.epic = exports.displayName = exports.descriptionHtml = exports.description = exports.attachmentPath = exports.attachment = exports.allureId = exports.addFailedTests = void 0;
+exports.tms = exports.testCaseId = exports.tags = exports.tag = exports.suite = exports.subSuite = exports.story = exports.step = exports.severity = exports.parentSuite = exports.parameter = exports.owner = exports.logStep = exports.links = exports.link = exports.layer = exports.labels = exports.label = exports.issue = exports.historyId = exports.feature = exports.epic = exports.displayName = exports.descriptionHtml = exports.description = exports.attachmentPath = exports.attachment = exports.allureId = void 0;
 var _model = require("./model.js");
 var _runtime = require("./sdk/runtime/runtime.js");
 var _utils = require("./sdk/utils.js");
-var _NoopTestRuntime = require("./sdk/runtime/NoopTestRuntime");
 var callRuntimeMethod = function callRuntimeMethod(method) {
   for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     args[_key - 1] = arguments[_key];
@@ -65,10 +64,6 @@ var displayName = name => {
   return callRuntimeMethod("displayName", name);
 };
 exports.displayName = displayName;
-var addFailedTests = tests => {
-  return callRuntimeMethod('addFailedTests', tests);
-};
-exports.addFailedTests = addFailedTests;
 var historyId = value => {
   return callRuntimeMethod("historyId", value);
 };
@@ -142,5 +137,4 @@ var tags = exports.tags = function tags() {
     value
   })));
 };
-var expectedlyFailedTests = exports.expectedlyFailedTests = _NoopTestRuntime.noopRuntime.expectedlyFailedTests;
 //# sourceMappingURL=facade.js.map

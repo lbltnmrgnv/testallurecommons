@@ -3,12 +3,6 @@ import type { TestRuntime } from "./types.js";
 
 export class NoopTestRuntime implements TestRuntime {
 
-  expectedlyFailedTests: string[] = []
-
-  async addFailedTests(tests){
-    await this.expectedlyFailedTests.push(tests);
-  }
-
   async attachment() {
     await this.warning();
   }

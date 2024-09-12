@@ -26,9 +26,7 @@ export {
     tag,
     tags,
     testCaseId,
-    tms,
-    addFailedTests,
-    expectedlyFailedTests
+    tms
 } from "./facade.js";
 export type {StepContext} from "./facade.js";
 export type {

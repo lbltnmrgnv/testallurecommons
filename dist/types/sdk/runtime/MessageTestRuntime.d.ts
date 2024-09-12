@@ -2,8 +2,6 @@ import { type AttachmentOptions, type Label, type LabelName, type Link, type Lin
 import type { RuntimeMessage } from "../types.js";
 import type { TestRuntime } from "./types.js";
 export declare abstract class MessageTestRuntime implements TestRuntime {
-    expectedlyFailedTests: any;
-    addFailedTests(tests: string[]): Promise<void>;
     label(name: LabelName | string, value: string): Promise<void>;
     labels(...labels: Label[]): Promise<void>;
     link(url: string, type?: LinkType | string, name?: string): Promise<void>;

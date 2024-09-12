@@ -11,6 +11,7 @@ var Status = exports.Status = /*#__PURE__*/function (Status) {
   Status["BROKEN"] = "broken";
   Status["PASSED"] = "passed";
   Status["SKIPPED"] = "skipped";
+  Status["EXPECTEDLY_FAILED"] = "expectedlyFailed";
   return Status;
 }({});
 var StatusByPriority = exports.StatusByPriority = [Status.FAILED, Status.BROKEN, Status.PASSED, Status.SKIPPED];

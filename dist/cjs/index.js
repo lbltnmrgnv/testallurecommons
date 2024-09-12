@@ -45,12 +45,6 @@ Object.defineProperty(exports, "StatusByPriority", {
     return _model.StatusByPriority;
   }
 });
-Object.defineProperty(exports, "addFailedTests", {
-  enumerable: true,
-  get: function get() {
-    return _facade.addFailedTests;
-  }
-});
 Object.defineProperty(exports, "allureId", {
   enumerable: true,
   get: function get() {
@@ -91,12 +85,6 @@ Object.defineProperty(exports, "epic", {
   enumerable: true,
   get: function get() {
     return _facade.epic;
-  }
-});
-Object.defineProperty(exports, "expectedlyFailedTests", {
-  enumerable: true,
-  get: function get() {
-    return _facade.expectedlyFailedTests;
   }
 });
 Object.defineProperty(exports, "feature", {
